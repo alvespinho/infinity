@@ -1,3 +1,5 @@
+####### MÉDIA DE IDADE DOS ALUNOS
+
 lista = []
 alunos = int (input ('Quantidade de alunos: '))
 for i in range (alunos):
