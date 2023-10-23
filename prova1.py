@@ -1,4 +1,3 @@
-
 ######### Tipagem de Dados:
 
 string = '12'
