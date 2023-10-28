@@ -1,0 +1,41 @@
+body {
+    background: #378dc2;
+    font: normal 15pt Verdana;
+
+}
+
+header {
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+
+}
+
+section{
+    background: white;
+    border-radius: 50px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+}
+
+div { 
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+}
+
+img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
