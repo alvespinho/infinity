@@ -11,63 +11,52 @@ let dia = data.getDay()
 
 msg.innerHTML = `Agora são ${hora} horas.`
 
-if (hora >= 0 && hora <= 12) {
+if (mes == 2) {
     /// AQUARIO
     img.src = "morning_pic.png"
-    document.body.style.background = "#f1f15d"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 3){
     /// PEIXES
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 4){
     /// ARIES
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 5){
     /// TOURO
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-} else if (hora >= 12 && hora < 18){
-    /// CANCER
+    document.body.style.background = ""
+} else if (mes == 6){
+    /// GÊMEOS
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"}
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 7){
+    /// CÂNCER 
+    img.src = "noon_pic.png"
+    document.body.style.background = ""
+} else if (mes == 8){
     /// LEAO
     img.src = "noon_pic.png"
-    document.body.style.background ="#ff5e00"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 9){
     /// VIRGEM
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 10){
     /// LIBRA
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background = ""
+} else if (mes == 11){
     /// ESCORPIÃO 
     img.src = "noon_pic.png"
-    document.body.style.background ="#ff5e00"
-} else if (hora >= 12 && hora < 18){
+    document.body.style.background =""
+} else if (mes == 12){
     /// SAGITÁRIO 
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-
-} else if (hora >= 12 && hora < 18){
-    /// CAPRICORNIO
+    document.body.style.background = ""
+} else (mes == 1){
+    /// CAPRICÓRNIO
     img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-
-
-} else if (hora >= 12 && hora < 18){
-    /// BOA TARDE
-    img.src = "noon_pic.png"
-    document.body.style.background = "#ff5e00"
-
-
-
-
-else {
-    /// BOA NOITE
-    img.src = "nite_pic.png"
-    document.body.style.background = "#378dc2"
+    document.body.style.background = ""
 }}
