@@ -9,6 +9,8 @@ let data = new Date()
 let mes = data.getMonth()
 let dia = data.getDay()
 
+/// let ano = data.fullYear()
+
 msg.innerHTML = `Agora são ${hora} horas.`
 
 if (mes == 2) {
