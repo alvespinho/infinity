@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do Dia!</title>
+    <title>Signo do Zodíaco</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body onload="carregar()">
     <header>
         <h1>
-            Olá!<br>Seja bem vindo...
+            Qual é o seu Signo do Zodíaco?
         </h1>
     </header>
     <section>
-        <div id = "msg">
-            Aqui vai aparecer a mensagem:
+        <div>
+            <p>Dia de Nascimento:
+                <input type="number" name="txtdia" id="txtdia" min="1" max="31">
+               Mês de Nascimento:
+                <input type="number" name="txtmes" id="txtmes" min="1900">
+            </p>
+            <p> 
+                <input type="button" value="confirmar" onclick="confirmar()">
+            </p>
+        <div id="res">
+            Preencha os dados e descubra. 
         </div>
-        <div id = "foto">
-            <img id="imagem" src="morning_pic.png" alt="fotomanha">
-        </div>
-    </section>
-    
+    </section> 
     <footer>
         <p>
             &copy;Alvespinho Produções
