@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signo do Zodíaco</title>
+    <link rel="stylesheet" href="estilosigno.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Qual é o seu Signo do Zodíaco?
+        </h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Dia de Nascimento:
+                    <input type="number" name="numdia" id="numdia" min="1" max="31">
+            </p>
+            <p>
+                Mês de Nascimento: 
+                    <input type="number" name="nummes" id="nummes" min="1" max="12">
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="confirmar()">
+            </p>
+
+        </div>
+        <div id="res">
+            Preencha os dados e descubra!
+        </div>
+    </section> 
+    <footer>
+        <p>
+            Alvespinho Produções &copy;
+        </p>
+    </footer>
+    <script src="scriptsigno.js"></script>
+</body>
+</html>
