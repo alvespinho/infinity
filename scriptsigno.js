@@ -1,4 +1,4 @@
-function carregar() {
+function confirmar() {
 
 let msg = window.document.getElementById ("msg")
 let img = window.document.getElementById ("imagem")
