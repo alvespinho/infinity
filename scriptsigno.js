@@ -1,16 +1,17 @@
 function confirmar() {
 
-let msg = window.document.getElementById ("res")
-let img = window.document.getElementById ("imagem")
+let msg = window.document.getElementById("res")
+let img = window.document.getElementById("imagem")
 
 let data = new Date()
 
 /// let hora = data.getHours()  << USAR HORA ATUAL >>
 
-let mes = document.getElementById("txtmes")
-let dia = document.getElementById("txtdia")
+let fmes = document.getElementById("txtmes")
+let fdia = document.getElementById("txtdia")
 
-
+let mes = number(fmes.value)
+let dia = number(fdia.value)
 
 res.innerHTML = `Você é ${}.`
 
