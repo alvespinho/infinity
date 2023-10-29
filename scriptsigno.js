@@ -70,7 +70,7 @@ if (mes.value > 12 || mes.value < 1 || dia.value < 1 || dia.value > 31) {
     img.src = ""
     document.body.style.background = ""   
     res.innerHTML = `Você é SAGITÁRIO.`
-} else (mes.value == 1){
+} else (mes.value == 1);{
     /// CAPRICÓRNIO
     img.src = ""
     document.body.style.background = ""   
