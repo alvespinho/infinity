@@ -3,9 +3,9 @@ soma_idades = 0
 usuarios_below_20 = 0
 usuarios_above_40 = 0
 oldest_usuario = None
-oldest_idade = 0
+oldest_idade = 0 ####Referência de Validação 
 youngest_genero = None
-youngest_idade = 100 #### Referência de Idade
+youngest_idade = 100 ####Referência de Validação
 
 for i in range(5):
     usuario = input(f'Digite o nome do Usuário #{i+1}: ')
@@ -15,12 +15,12 @@ for i in range(5):
     soma_idades += idade
     dados.append({'Usuario': usuario, 'Idade': idade, 'Genero': genero})
     
-    #### Atualizar valor da pessoa mais velha
-    if idade > oldest_idade:
+    #### Atualizar mais velho
+     if idade > oldest_idade:
     	oldest_idade = idade 
     	oldest_usuario = usuario
     
-    #### Atualizar valor da idade caçula 
+    #### Atualizar caçula 
     if idade < youngest_idade:
         youngest_idade = idade
         youngest_genero = genero
