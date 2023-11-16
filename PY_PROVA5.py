@@ -10,7 +10,4 @@ for i in range (10):
 		impares.append(num)
 
 print (F'\nA quantidade de números pares é: {len(pares)}. \nOs números pares são {pares}. \nA soma entre eles é {sum(pares)}.')
-
-
-
 print (F'\nA quantidade de números ímpares é: {len(impares)}. \nOs números ímpares são {impares}. \nA soma entre eles é {sum(impares)}.')
