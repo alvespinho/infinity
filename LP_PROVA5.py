@@ -17,8 +17,8 @@ for i in range(5):
     
     #### Atualizar mais velho
      if idade > oldest_idade:
-    	oldest_idade = idade 
-    	oldest_usuario = usuario
+    	   oldest_idade = idade 
+    	   oldest_usuario = usuario
     
     #### Atualizar caçula 
     if idade < youngest_idade:
