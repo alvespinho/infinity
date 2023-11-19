@@ -5,31 +5,31 @@ usuarios_above_40 = 0
 oldest_usuario = None
 oldest_idade = 0
 youngest_genero = None
-youngest_idade = 120 #### Idade Referência 
+youngest_idade = 120  # Idade Guinness
 
 for i in range(5):
-	usuario = input(f'Digite o nome do Usuário #{i+1}: ')
-	idade = int(input(f'Digite a idade do Usuário #{i+1}: '))
-	genero = input(f'Digite o gênero do Usuário #{i+1}: ')
-    
-	soma_idades += idade
-	dados.append({'Usuario': usuario, 'Idade': idade, 'Genero': genero})
-    
-#### Atualizar valor da pessoa mais velha
-if idade > oldest_idade:
-	oldest_idade = idade
-	oldest_usuario = usuario
-    
-#### Atualizar valor da idade caçula 
-if idade < youngest_idade:
-	youngest_idade = idade
-	youngest_genero = genero
+    usuario = input(f'Digite o nome do Usuário #{i+1}: ')
+    idade = int(input(f'Digite a idade do Usuário #{i+1}: '))
+    genero = input(f'Digite o gênero do Usuário #{i+1}: ')
 
-#### Qnts acima de 40, abaixo de 20
-if idade < 20:
-	usuarios_below_20 += 1
-elif idade > 40:
-	usuarios_above_40 += 1
+    soma_idades += idade
+    dados.append({'Usuario': usuario, 'Idade': idade, 'Genero': genero})
+
+    # Atualizar valor da idade do usuário mais velho
+    if idade > oldest_idade:
+        oldest_idade = idade
+        oldest_usuario = usuario
+
+    # Atualizar valor da idade do usuário caçula
+    if idade < youngest_idade:
+        youngest_idade = idade
+        youngest_genero = genero
+
+    # Qnts acima de 40 && abaixo de 20
+    if idade < 20:
+        usuarios_below_20 += 1
+    elif idade > 40:
+        usuarios_above_40 += 1
 
 media_idades = int(soma_idades / len(dados))
 
