@@ -11,5 +11,5 @@ while num != bingo:
     num = int(input('Adivinhe o número da máquina: '))
     tentativas += 1
 
-print(f'Parabéns! Você acertou em {tentativas} tentativas.')
+print(f'Parabéns! O número é {bingo}. Você acertou em {tentativas} tentativas.')
 
