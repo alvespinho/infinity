@@ -2,8 +2,7 @@ alunos_matriculados = []
 
 def add_aluno(aluno, matricula):
     alunos_matriculados.append({'Aluno': aluno, 'Matrícula': matricula})
-    print(f'{aluno.upper()} foi adicionado ao Sistema! Matrícula de número: {
-          matricula}')
+    print(f'{aluno.upper()} foi adicionado ao Sistema! Matrícula de número: {matricula}')
 
 def del_aluno(aluno):
     global alunos_matriculados
