@@ -13,18 +13,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 
+##from frontend_config import *
+
 
 from tkinter import *
 from tkinter import filedialog
+from pandas import *
 from tkinter import ttk
+## from frontend_config import *
 import pandas as pd
-
-BG_GRAY = "#ABB2B9"
-BG_COLOR = "#17202A"
-TEXT_COLOR = "#EAECEE"
-
-FONT = "Helvetica 14"
-FONT_BOLD = "Helvetica 13 bold"
 
 
 DIR_PATH = os.getcwd()
@@ -41,11 +38,25 @@ else:
 CHROME_OPTIONS = Options()
 CHROME_OPTIONS.add_argument(CHROME_PROFILE_PATH)
 
-CHROME_DRIVER_PATH = os.path.join(DIR_PATH, 'chromedriver.exe')
+CHROME_DRIVER_PATH = 'X:\\07-DOMINGO\\Daniel_Alves_Pinho\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe'
 CHROME_SERVICE = Service(executable_path = CHROME_DRIVER_PATH)
 
 
+### A PARTIR DAQUI CRIAMOS A INTERFACE DO PROGRAMA
 
+BG_GRAY = "#ABB2B9"
+BG_COLOR = "#17202A"
+TEXT_COLOR = "#EAECEE"
+FONT = "Helvetica 14"
+FONT_BOLD = "Helvetica 13 bold"
+
+
+from tkinter import *
+# from tkinter import filedialog
+# from pandas import * 
+# from tkinter import ttk
+# from frontend_config import *
+import pandas as pd  
 class ChatApplication:
     def __init__ (self):
         self.window = Tk()
@@ -61,7 +72,7 @@ class ChatApplication:
 
         #CABEÇALHO
         head_label = Label(self.window, bg=BG_COLOR, fg=TEXT_COLOR, 
-                            text="Bem Vindo!", font=FONT_BOLD, pady=10)
+                            text="Bem - Vindo!", font=FONT_BOLD, pady=10)
         head_label.place(relwidth=1)
 
         # tiny divider 
@@ -72,7 +83,6 @@ class ChatApplication:
 
         self.tamanho = Label(self.window, text=f'Seu arquivo tem {len(contatos)} números', bg=BG_COLOR, fg=TEXT_COLOR, font=FONT_BOLD, pady=10)
         self.tamanho.place(relwidth=1, rely=0.08, relheight= 0.1)
-        
         #LISTA COM OS CONTATOS EXIBIDOS
         listaDeContatos = Variable(value=contatos)
         self.listaContatos = Listbox(self.window, height = 3, listvariable = listaDeContatos, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT_BOLD)
@@ -121,8 +131,19 @@ class ChatApplication:
                 navegador.find_element(by=By.XPATH, value='/html/body/div[1]/div/div/div[5]/div/footer/div[1]/div/span[2]/div/div[2]/div[2]/button').send_keys(Keys.ENTER)
                 time.sleep(10)
         finally:
-            navegador.quit()
+            navegador.quit() 
 
 if __name__ == "__main__":
     app = ChatApplication()
     app.run()
+
+
+
+
+#BAIXAR BIBLIOTECAS:
+    #openpyxl
+    #pandas
+    #selenium
+    #chromedriver
+    #https://dontpad.com/domingopalestra
+    #https://profrenanteixeira.notion.site/C-DIGO-9581b9e61f884ccca7480a7b997b366d

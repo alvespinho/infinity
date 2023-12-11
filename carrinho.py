@@ -1,67 +1,38 @@
-### LISTA "CARRINHO" VAZIA ###
-carrinho = []
-
-### OPÇÃO "ADD PRODUTO" ###
-def add_produto(produto, preco, und):
-    carrinho.append({'Produto': produto, 'Preço': preco, 'Unidades': und})
-
-### OPÇÃO "REMOVER PRODUTO" ###
-def del_produto(produto):
-    global carrinho 
-    
-    for item in carrinho:
-        if item['Produto'] == produto:
-            carrinho.remove(item)
-            break
-            
-### OPÇÃO "VER CARRINHO" ###
-def ver_carrinho():
-    total_preco = 0
-    print("\n### CARRINHO DE COMPRAS ###")
-    
-    for item in carrinho:
-        produto = item['Produto']
-        preco = item['Preço']
-        und = item['Unidades']
-        total_preco += preco * und
-        
-        print(f"{produto.upper()}|	${preco:.2f}|	{und} un|")
-    
-    print(f'\n		###### TOTAL: ${total_preco:.2f} #####')
+from carrinhofunc import *
 
 ### PROMPT DE COMANDO ###
 while True:
-    print("\n### CARRINHO DE COMPRAS ###")
-    print("\n1. Inserir Produto")
-    print("2. Remover Produto")
-    print("3. Ver Carrinho")
-    print("4. Sair")
-
-    opcao = input("\n### DIGITE O Nº DA OPÇÃO DESEJADA: ###\n")
-
-### PARA ADD PRODUTO ###
-    if opcao == '1':
-        produto = input("	Produto: ")
-        preco = float(input("	Preço: "))
-        und = int(input("	Unidades: "))
-        add_produto(produto, preco, und)
-        print(f"\n{und} {produto.upper()} foi adicionado ao carrinho")
-
-### PARA REMOVER PRODUTO ###             
-    elif opcao == '2':
-        produto = input("Produto a ser removido: ")
-        del_produto(produto)
-        print(f"\n{produto.upper()} foi removido do carrinho.")
-
-### PARA VER CARRINHO ###               
-    elif opcao == '3':
-        ver_carrinho()
-
-### PARA SAIR ###       
-    elif opcao == '4':
-        break
+    print ('\n### CARRINHO DE COMPRAS ###')
+    print ('\n1. Inserir Produto')
+    print ('2. Remover Produto')
+    print ('3. Ver Carrinho de Compras')
+    print ('4. Sair')
+    
+    escolha = input('\n#### DIGITE O Nº DA OPÇÃO DESEJADA ####\n')
+    
+### ESCOLHA ADD PRODUTO ###
+    if escolha == '1':
+        produto = input(' Produto: ')
+        preco = float(input(' Preço: '))
+        un = int(input (' Unidades: '))
+        add_produto(produto, preco, un)
+        print (F'\n{un} {produto.upper()} foi adicionado ao carrinho!')
         
-    else:
-        print("Ops! Opção inválida. Tente novamente.")
+### ESCOLHA REMOVER PRODUTO ###
+    elif escolha == '2':
+        produto = input ('Qual produto deseja remover?  ')
+        del_produto(produto)
+        print (F'\n{produto.upper()} foi removido do carrinho!')
+        
+### ESCOLHA VER CARRINHO ###
+    elif escolha == '3':
+        ver_carrinho()
+    
+### ESCOLHA SAIR ###
+    elif escolha == '4':
+        break
 
-print("Boas compras!")
+### ESCOLHA ERRADO ###
+    else:
+        print ('Ops! Opção inválida. Tente novamente.')
+        

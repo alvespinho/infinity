@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog do Palmeiras</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: green;
+      color: white;
+      padding: 20px;
+    }
+    h1 {
+      margin: 0;
+      text-align: center;
+      color: green;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    h3 {
+        text-align: center;
+    }
+    main {
+      padding: 80px;
+    }
+    article {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: green;
+    }
+    footer {
+      background-color: green;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    form {
+        text-align: center;
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header style="background-image: url('https://sep-bucket-prod.s3.amazonaws.com/wp-content/uploads/2022/03/time-desk.jpg'); height: 235px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Palmeiras_logo.svg/2048px-Palmeiras_logo.svg.png" alt="Logo do Palmeiras" style="width: 350px;">
+      </header>
+  <main>
+    <article>
+      <h1>Afinal, o Palmeiras tem mundial?</h1>
+      <p>
+        O Palmeiras, um dos clubes mais tradicionais do futebol brasileiro, desperta uma discussão acalorada entre os torcedores e amantes do esporte: afinal, o Palmeiras tem um título mundial? 
+      </p>
+      <p>
+        No entanto, outros discordam dessa visão e argumentam que a Copa Rio não pode ser equiparada aos mundiais de clubes modernos. Alegam que o formato e o reconhecimento dados aos torneios mudaram ao longo dos anos, tornando os mundiais mais padronizados e oficiais. Independentemente da opinião individual, é inegável que o Palmeiras possui uma história rica e repleta de conquistas importantes. O clube acumula diversos títulos nacionais e internacionais ao longo dos anos, consolidando-se como um dos gigantes do futebol brasileiro. 
+      </p>
+      <p>
+        O debate sobre o título mundial do Palmeiras continuará a existir, alimentando a paixão e rivalidade entre os torcedores. No entanto, o que não se pode negar é a grandeza e a importância do clube na história do futebol brasileiro. Em resumo, a resposta para a pergunta "Afinal, o Palmeiras tem mundial?" é uma questão de interpretação e opinião pessoal. A conquista da Copa Rio de 1951 é considerada por muitos como um título mundial, enquanto outros acreditam que os mundiais de clubes modernos são os únicos que devem ser considerados como tal. O importante é reconhecer a relevância do Palmeiras no cenário futebolístico e apreciar sua história de sucesso. 
+      </p>
+    </article>
+  </main>
+  <h2>Gostaríamos de ouvir a sua opinião! Deixe um comentário abaixo compartilhando o que você pensa sobre a questão.</h2>
+  <form name="commentForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+    <textarea name="comment" cols="100" rows="7"></textarea>
+    <br><br>
+    <input type="submit" value="Enviar Comentário">
+  </form>
+  <div id="comentario"></div>
+  <script>
+    function validateForm() {
+      var comment = $("textarea[name='comment']").val();
+      if (comment.trim() === "") {
+        alert("Por favor, preencha o campo de comentário.");
+        return false;
+      }
+      $("#comentario").text(comment); // Adiciona o comentário à div vazia
+      alert("Comentário enviado com sucesso! Iremos verificar o seu comentário e logo estará disponível.");
+      return true;
+    }
+  </script>
+  <br>
+  <footer>
+    <h3>© 2022 Blog do Palmeiras. Todos os direitos reservados.</h3>
+  </footer>
+</body>
+</html>
