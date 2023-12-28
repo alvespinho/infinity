@@ -3,7 +3,7 @@ def media():
 
     while True:
         # Nome do aluno
-        nome_aluno = input("Insira o nome do aluno (ou 'sair' para finalizar): ")
+        nome_aluno = input("\nInsira o nome do aluno (ou 'sair' para finalizar): ")
 
         # Sair
         if nome_aluno.lower() == 'sair':
@@ -29,15 +29,17 @@ def media():
         if notas:
             aritimetica = sum(notas) / len(notas)
             alunos[nome_aluno].append(aritimetica)
-            print(f"A média de {nome_aluno}: {aritimetica:.2f}")
+            print(f"\nA média de {nome_aluno}: {aritimetica:.2f}")
         else:
             print(f"Nenhuma nota inserida para {nome_aluno}.")
 
-    # Calcular e imprimir medias
     print("\nNotas de todos alunos: ")
-    for estudante, grades in alunos.items():
-        if grades:
-            aritimetica = sum(grades) / len(grades)
+    
+    # Calcular e imprimir medias
+
+    for estudante, pontos in alunos.items():
+        if pontos:
+            aritimetica = sum(pontos) / len(pontos)
             print(f"{estudante}: {aritimetica:.2f}")
         else:
             print(f"{estudante}: nenhuma nota inserida. ")
@@ -46,4 +48,4 @@ def media():
 
 # Chamar função
 mediafinal = media()
-print("Nota dos alunos:", mediafinal)
+
