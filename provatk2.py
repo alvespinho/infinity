@@ -38,9 +38,9 @@ def verifica_senha():
     email = campo_email.get()
     senha = campo_pass.get()
 
-    # Verificar email (contains exactly one '@' character)
+    # Verificar email (se contém 1 @)
     if email.count('@') == 1 and re.match(r"[^@]+@[^@]+\.[^@]+", email):
-        # Check if the password has 6 or more characters
+        # Verificar senha (se contém ao menos 6)
         if len(senha) >= 6:
             messagebox.showinfo('Login', f'Seja bem vindo, {email.split("@")[0]}!')
 
