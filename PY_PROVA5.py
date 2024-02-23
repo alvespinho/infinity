@@ -1,3 +1,5 @@
+#### PEDIR 10 NÚMEROS AO USUÁRIO E MOSTRAR QUANTOS PARES E QUANTOS ÍMPARES
+
 pares = []
 impares = []
 
