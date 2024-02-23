@@ -1,4 +1,4 @@
-### ENCONTRANDO MAIO NÚMERO COM FUNÇÕES
+### ENCONTRANDO MAIOR NÚMERO COM FUNÇÃO
 
 def maior_numero (n1, n2):
     if n1 > n2:
