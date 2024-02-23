@@ -1,5 +1,6 @@
 #### PROVA SOBRE MÓDULOS E BIBLIOTECAS
 
+'''
 a) 
 O código modulariza a biblioteca 'random' para atribuir à variável 'x' um valor randômico (aleatório) dentro da lista 'lista'. 
 
@@ -16,3 +17,4 @@ listac = list (range (1,101))
 print (listac)
 aleatorio = random.sample(listac, 5)
 print (aleatorio)
+'''
