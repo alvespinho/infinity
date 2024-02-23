@@ -1,3 +1,5 @@
+#### FUNÇÕES A SEREM MODULADAS PELO CÓDIGO locadora.py PARA CADASTRO DE USUÁRIOS EM LOCADORA
+
 ### CADASTRO VAZIO ###
 import json
 cadastro = {}
