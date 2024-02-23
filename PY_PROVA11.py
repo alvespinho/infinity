@@ -1,4 +1,4 @@
-#### CALCULANDO MÉDIA COM FUNÇÕES
+#### CALCULANDO MÉDIA COM FUNÇÃO
 
 lista = []
 
