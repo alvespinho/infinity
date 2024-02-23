@@ -1,3 +1,5 @@
+### FUNÇÕES COM STRING
+
 # def SomaMenor (lista):
 #     lista.sort()
 #     return lista[0] + lista[1]
