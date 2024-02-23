@@ -1,4 +1,5 @@
-### FUNÇÕES
+### ENCONTRAR MÉDIA DE ALUNO E VERIFICAR SE PASSOU DE ANO COM FUNÇÕES
+
 def verificar(media):
     if media == 10:
         return (f"Parabéns, sua média é 10")
