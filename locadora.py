@@ -1,3 +1,5 @@
+#### CADASTRO DE USUÁRIO EM LOCADORA DE FILMES COM NÚMERO DE MATRÍCULA GERADO PELA MÁQUINA 
+
 from random import randint
 from locadorafunc import *
 
