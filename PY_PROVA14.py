@@ -1,3 +1,6 @@
+### CALCULANDO MÉDIA USANDO PROCEDIMENTOS EM UMA FUNÇÃO 
+
+
 def media():
     alunos = {}
 
