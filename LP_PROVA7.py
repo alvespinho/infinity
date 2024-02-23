@@ -1,3 +1,5 @@
+### CALCULANDO MÉDIA DE NÚMEROS ATÉ O USUÁRIO FINALIZAR PROGRAMA COM 0
+
 soma = []
 num = int (input('Digite os números para análise (0 finaliza): '))
 
