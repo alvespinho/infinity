@@ -1,3 +1,6 @@
+### UTILIZANDO BIBLIOTECA PARA OPERAÇÕES ARITMÉTICAS 
+
+
 from functools import reduce
 
 ### Lista da questão
