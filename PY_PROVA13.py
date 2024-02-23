@@ -1,3 +1,5 @@
+#### PROVA SOBRE MÓDULOS E BIBLIOTECAS
+
 a) 
 O código modulariza a biblioteca 'random' para atribuir à variável 'x' um valor randômico (aleatório) dentro da lista 'lista'. 
 
