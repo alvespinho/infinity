@@ -7,6 +7,9 @@ print (v1.nome)
 
 print (v1.ToString)
 
+
+### INSTANCIAR O OBJETO 
+
 # v1.nome = "Agnelo"
 # v1.nascimento = "01/01/2001"
 
