@@ -1,11 +1,11 @@
-######### Tipagem de Dados:
+######### TIPAGEM DE DADOS:
 
 string = '12'
 integer = 12
 float = 12.0
 bool = True 
 
-######### Solicitação e Interação com Usuário:
+######### SOLICITAÇÃO DE DADOS AO USUÁRIO:
 
 print ('Olá, Seja Bem Vindo!')
 name = input ('Digite seu nome: ')
