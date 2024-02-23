@@ -1,3 +1,5 @@
+#### CALCULANDO MÉDIA COM FUNÇÕES
+
 lista = []
 
 n1 = int(input ('Digite um número: '))
